@@ -9,6 +9,8 @@ var logger = new loggic.logger({
     catchErrors: true
 });
 
+var port = process.env.PORT || 8080;
+
 app.get('/', (req, res) => {
     res.render('index', {
         config: require('./configuration/config.js').def,
@@ -16,7 +18,7 @@ app.get('/', (req, res) => {
     })
 })
 
-var listener = app.listen(4040, () => {
+var listener = app.listen(port, () => {
     logger.log({
         text: 'Listening on ' + listener.address().port,
         color: 'green'
