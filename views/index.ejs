@@ -25,9 +25,13 @@
 
     <div class="apps container">
         <% for (var category in apps) { %>
-            <h3>
-                <%= apps[category].name %>
-            </h3>
+            <br>
+            <p class="categoryTitle">
+                <strong><%= apps[category].name %></strong>
+            </p>
+            <p class="categoryDesc">
+                    <%= apps[category].description %>
+            </p>
             <% for(var app in apps[category].apps) { %>
                 <div class="card">
                     <div class="card-body">

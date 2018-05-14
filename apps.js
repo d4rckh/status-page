@@ -1,43 +1,46 @@
 module.exports = [{
-    'name': 'eskimo',
-    'apps': [{
-            'name': 'API',
-            'status': {
-                'type': 'success',
-                'text': 'Functional'
+        'name': 'eskimo',
+        'description': 'LOl',
+        'apps': [{
+                'name': 'API',
+                'status': {
+                    'type': 'success',
+                    'text': 'Functional'
+                },
+                'description': 'Eskimo\'s API'
             },
-            'description': 'Eskimo\'s API'
-        },
-        {
-            'name': 'Client',
-            'status': {
-                'type': 'success',
-                'text': 'Online'
+            {
+                'name': 'Client',
+                'status': {
+                    'type': 'success',
+                    'text': 'Online'
+                },
+                'description': 'Eskimo it self'
+            }
+        ]
+    },
+    {
+        'name': 'Test',
+        'description': 'LOl',
+        'apps': [{
+                'name': 'Working?',
+                'status': {
+                    'type': 'success',
+                    'text': 'Yes'
+                },
+                'description': 'Test\'s API'
             },
-            'description': 'Eskimo it self'
-        }
-    ]
-}, {
-    'name': 'Test',
-    'apps': [
-        {
-            'name': 'Working?',
-            'status': {
-                'type': 'success',
-                'text': 'Yes'
-            },
-            'description': 'Test\'s API'
-        },
-        {
-            'name': 'Page',
-            'status': {
-                'type': 'success',
-                'text': 'Online'
-            },
-            'description': 'Test it self'
-        }
-    ]
-}]
+            {
+                'name': 'Page',
+                'status': {
+                    'type': 'success',
+                    'text': 'Online'
+                },
+                'description': 'Test it self'
+            }
+        ]
+    }
+]
 
 /**
  * Status string validation

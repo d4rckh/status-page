@@ -24,3 +24,11 @@
 .de:hover .detext {
     visibility: visible;
 }
+
+.categoryTitle {
+    font-size: 20px
+}
+
+.categoryDesc {
+    font-size: 19px
+}
