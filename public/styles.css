@@ -2,10 +2,25 @@
     text-align: center
 }
 
-.small {
-    font-size: 800px
+.de {
+    position: relative;
+    display: inline-block;
 }
 
-img.apps {
-    width: 100px
+/* Tooltip text */
+
+.de .detext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 2px;
+    position: absolute;
+    z-index: 1;
+}
+
+.de:hover .detext {
+    visibility: visible;
 }

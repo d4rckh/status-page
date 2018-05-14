@@ -24,21 +24,24 @@
     </div>
 
     <div class="apps container">
-        <% for (var app in apps) { %>
-
-            
+        <% for (var category in apps) { %>
+            <h3>
+                <%= apps[category].name %>
+            </h3>
+            <% for(var app in apps[category].apps) { %>
                 <div class="card">
                     <div class="card-body">
-                            <%= apps[app].name %>
-                        <span class="badge badge-<%= apps[app].status.type %>">
-                            <%= apps[app].status.text %>
-                        </span>
-                        <a data-toggle="tooltip" title="<%= apps[app].description %>">
-                            <img src="/assets/info.png">
-                        </a>
+                        <%= apps[category].apps[app].name %>
+                            <span class="badge badge-<%= apps[category].apps[app].status.type %>">
+                                <%= apps[category].apps[app].status.text %>
+                            </span>
+                            <div class="de"><img src="/assets/info.png">
+                                <span class="detext"><%= apps[category].apps[app].description %></span>
+                            </div>
                     </div>
                 </div>
                 <% } %>
+                    <% } %>
     </div>
 
     <!-- 
