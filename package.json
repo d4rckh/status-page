@@ -1,0 +1,22 @@
+{
+  "name": "status-page",
+  "version": "0.0.1",
+  "description": "A status page powered by Express and EJS",
+  "main": "",
+  "scripts": {
+    "test": "nodemon index.js",
+    "start": "pm2 start index.js",
+    "restart": "pm2 restart index",
+    "stop": "pm2 stop index"
+  },
+  "author": "me",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "loggic": "^3.8.43"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1"
+  }
+}
