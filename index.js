@@ -14,7 +14,7 @@ var port = process.env.PORT || 8080;
 app.get('/', (req, res) => {
     res.render('index', {
         config: require('./configuration/config.js').def,
-        apps: require('./apps')
+        apps: require('./apps/apps.js').apps
     })
 })
 
